@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldCup H조</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- 메인 페이지 -->
+    <div class="container">
+        <div class="nav-bar">
+            <h1>2022 카타르 월드컵 H조</h1> 
+            <div class="control-bar">
+                <box-icon class="menu account" name='user'></box-icon>
+                <box-icon class="menu" name='menu-alt-right'></box-icon>
+            </div>
+        </div>
+
+        <div class="logo-container">
+            <div class="logo">
+                <div class="mini-logo"><img src="./imgs/ball.png" alt=""></div>
+                <div class="semi-mini-logo"><img src="./imgs/ball.png" alt=""></div>
+            </div>
+
+            <div class="semi-logo"><img src="./imgs/ball.png" alt=""></div>
+        </div>
+
+        <div class="text-container">
+            <h1>Qatar WorldCup
+                <h2>H조</h2>
+            </h1>
+
+            <h3>대한민국,포르투칼,가나,우루과이
+            </h3>
+
+            <button class="discover"><span>information</span></button>
+        </div>
+    </div>
+    <!-- 화면 넘어가는 부분 -->
+    <div class="curtain c1" style="--i:1"></div>
+    <div class="curtain c2" style="--i:2"></div>
+    <div class="curtain c3" style="--i:4"></div>
+
+    <div class="discover-page">
+        <!-- 왼쪽 버튼 -->
+        <div class="return">
+            <div class="ret left" name='chevron-left'>◀◀</div>
+            <div class="ret right" name='chevron-right'>▶▶</div>
+        </div>
+
+        <!-- 국가 페이지 -->
+        <div class="pane-container">
+            <div class="pane" style="--j:1">
+                <h4>01</h4>
+                <div class="txt-container">
+                    <img src=".\imgs\qatar.gif" alt="">
+                    <h1>Korea Republic</h1>
+                    <h3>- 대한민국</h3>
+                    <span>FIFA랭킹 29위</span>
+                    <p>
+                        <span>주요 선수</span>
+                    <ul>
+                        <li> 손흥민</li>
+                        <li> 김민재</li>
+                        <li> 황의조</li>
+                    </ul>
+                    <br>
+                    <span>주요 커리어</span>
+                    <ul>
+                        <li>월드컵 출전 11회, 4위 1회</li>
+                        <li>아시안컵 출전 14회, 1위 2회</li>
+                        <li>올림픽 출전 8회, 3위 1회</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pane" style="--j:2">
+                <h4>02</h4>
+                <div class="txt-container">
+                    <img src=".\imgs\qatar1.gif" alt="">
+                    <h1>Portugal</h1>
+                    <h3>- 포르투갈</h3>
+                    <span>FIFA랭킹 8위</span>
+                    <p>
+                        <span>주요 선수</span>
+                    <ul>
+                        <li> Cristiano Ronaldo</li>
+                        <li> Bruno Fernandes</li>
+                        <li> Rúben Dias</li>
+                    </ul>
+                    <br>
+                    <span>주요 커리어</span>
+                    <ul>
+                        <li>월드컵 출전 8회, 3위 1회</li>
+                        <li>네이션스리그 출전 1회, 우승 1회</li>
+                        <li>유로 출전 7회, 우승 1회</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pane" style="--j:3">
+                <h4>03</h4>
+                <div class="txt-container">
+                    <img src=".\imgs\qatar2.gif" alt="">
+                    <h1>Ghana</h1>
+                    <h3>- 가나</h3>
+                    <span>FIFA랭킹 60위</span>
+                    <p>
+                        <span>주요 선수</span>
+                    <ul>
+                        <li> Jordan Ayew</li>
+                        <li> Thomas Partey</li>
+                        <li> Felix Afena-Gyan</li>
+                    </ul>
+                    <br>
+                    <span>주요 커리어</span>
+                    <ul>
+                        <li>월드컵 출전 4회, 8위 1회</li>
+                        <li>네이션스컵 출전 23회, 1위 4회</li>
+                        <li>올림픽 출전 6회, 3위 1회</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pane" style="--j:4">
+                <h4>04</h4>
+                <div class="txt-container">
+                    <img src=".\imgs\qatar3.gif" alt="">
+                    <h1>Uruguay</h1>
+                    <h3>- 우루과이</h3>
+                    <span>FIFA랭킹 16위</span>
+                    <p>
+                        <span>주요 선수</span>
+                    <ul>
+                        <li> Luis Suárez</li>
+                        <li> Diego Godin</li>
+                        <li> Rodrigo Bentancur</li>
+                    </ul>
+                    <br>
+                    <span>주요 커리어</span>
+                    <ul>
+                        <li>월드컵 출전 14회, 1위 2회</li>
+                        <li>컨페더레이션스컵 출전 2회, 4위 2회</li>
+                        <li>코파아메리카 출전 45회, 1위 15회</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const panes = document.querySelectorAll('.pane-container .pane');
+
+        for (let j = 0; j < panes.length; j++) {
+            const btn = document.createElement('div');
+            btn.classList.add('btn');
+
+            btn.innerHTML = `<box-icon class='menu' name="right-arrow-alt"></box-icon>`;
+
+            panes[j].appendChild(btn);
+
+            panes[j].addEventListener('mouseover', () => {
+                panes.forEach((pane) => {
+                    pane.style.background = 'rgba(0,0,0,0.552)';
+                });
+
+                panes[j].style.background = 'transparent';
+            });
+
+            panes[j].addEventListener('mouseout', () => {
+                panes.forEach((pane) => {
+                    pane.style.background = '';
+                });
+                panes[j].style.background = '';
+            });
+        }
+
+
+        const btn = document.querySelector('.discover');
+        const curtains = document.querySelectorAll('.curtain');
+        const discover_page = document.querySelector('.discover-page');
+
+        btn.addEventListener('click', discoverPage);
+
+        function discoverPage() {
+            curtains.forEach(curtain => {
+                curtain.classList.add('active');
+            });
+            discover_page.classList.add('active');
+        }
+
+        const back = document.querySelector('.ret.left');
+        const nxt = document.querySelector('.ret.right');
+
+        back.addEventListener('click', () => {
+            curtains.forEach((curtain) => {
+                curtain.classList.remove('active');
+            });
+            discover_page.classList.remove('active');
+        });
+
+        var index = 0;
+
+        function nxtPane() {
+            panes.forEach(pane => {
+                pane.style.background = 'rgba(0,0,0,0.552)'
+            });
+
+            panes[index].style.background = 'transparent';
+
+            index++;
+
+            if (index >= panes.length) {
+                index = 0;
+            }
+        }
+
+        nxt.addEventListener('click', nxtPane);
+    </script>
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</body>
+
+</html>
